@@ -1,0 +1,328 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	height: 100vh;
+	margin: 0;
+	background: white;
+	display: flex;
+	align-items: center;
+}
+
+.wrapper{
+	margin: 15vw auto;
+	height: 74.81296758104739vw;
+	width: 49.87531172069826vw;
+	position: relative;
+	background: rgba(0, 0, 0, 0.5);
+	animation-name: spining;
+	animation-duration: 10s;
+}
+@keyframes spining{
+	0% {transform: scale(0) rotate(0); opacity: 0}
+	50% {transform: scale(1) rotate(360deg); opacity: 1}
+	100% {transform: scale(1) rotate(360deg); opacity: 1}
+}
+
+.body{
+	height: 31.17206982543641vw;
+	width: 24.93765586034913vw;
+	position: absolute;
+	top: 9.351620947630924vw;
+	left: 12.468827930174564vw;
+	border-radius: 60% 40% 20% 20%;
+	border: 0.6234413965087282vw solid black;
+	background: red;
+}
+
+.hair1{
+	height: 4vw;
+	width: 5vw;
+	border-left: 0.5vw solid black;
+	position: absolute;
+	top: -0.8vw;
+	left: 17.5vw;
+	border-radius: 50%;
+	transform: rotate(80deg);
+}
+
+.hair2{
+	height: 4vw;
+	width: 5vw;
+	border-left: 0.5vw solid black;
+	position: absolute;
+	top: -2vw;
+	left: 14vw;
+	border-radius: 50%;
+	transform: rotate(75deg);
+}
+
+.hair3{
+	height: 4vw;
+	width: 5vw;
+	border-left: 0.5vw solid black;
+	position: absolute;
+	top: -1.8vw;
+	left: 10vw;
+	border-radius: 50%;
+	transform: rotate(60deg);
+}
+
+.eyebrow{
+	height: 3.2vw;
+	width: 12vw;
+	border-top: 1.2vw solid black;
+	border-radius: 50%;
+	position: absolute;
+	top: 3vw;
+	left: 8.5vw;
+}
+
+.eye{
+	height: 9.975062344139651vw;
+	width: 15vw;
+	background: white;
+	position: absolute;
+	top: 4.987531172069826vw;
+	left: 6.85785536159601vw;
+	border-radius: 30% 40% 30% 30%;
+}
+
+.eyeball{
+	height: 8.104738154613466vw;
+	width: 8.104738154613466vw;
+	background: #8080b8;
+	position: absolute;
+	top: 0.6234413965087282vw;
+	left: 4vw;
+	border-radius: 50%;
+}
+
+.eyeballl{
+	height: 3.117206982543641vw;
+	width: 3.117206982543641vw;
+	background: black;
+	position: absolute;
+	top: 2.43142144638404vw;
+	left: 2.5561097256857854vw;
+	border-radius: 50%;
+	animation-name: pupill;
+	animation-duration: 0.3s;
+	animation-fill-mode: forwards;
+	animation-delay: 5.2s;
+}
+@keyframes pupill{
+	0% {transform: scale(1)}
+	100% {transform:scale(1.7)}
+}
+
+.blink{
+	height: 0;
+	width:  16.808vw;
+	background: red;
+	position: absolute;
+	top: 4.8vw;
+	left: 5.3vw;
+	border-radius: 35%;
+	animation-name: blink;
+	animation-duration: 10s;
+	animation-delay: 8s;
+	animation-iteration-count: infinite;
+}
+@keyframes blink{
+	0% {height: 0}
+	3% {height: 11vw}
+	6% {height: 0}
+	50% {height: 0}
+	53% {height: 11vw}
+	56% {height: 0}
+	100% {height: 0}
+}
+	
+	
+.smile{
+	height: 9.975062344139651vw;
+	width: 12.468827930174564vw;
+	background: black;
+	position: absolute;
+	top: 9.351620947630924vw;
+	left: 8.5vw;
+	border-radius: 90% 90% 80% 80%;
+	animation-name: laugh;
+	animation-duration: 0.3s;
+	animation-delay: 5.5s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+}
+@keyframes laugh{
+	0% {top: 9.351620947630924vw}
+	100% {top: 13.092269326683292vw}
+}
+
+.teeth{
+	height: 3.7406483790523692vw;
+	width: 11.845386533665835vw;
+	background: white;
+	position: absolute;
+	top: 3.117206982543641vw;
+	left: 0.24937655860349128vw;
+	border-radius: 40%;
+}
+
+.mounth{
+	height: 6.234413965087282vw;
+	width: 13.341645885286782vw;
+	border-bottom: 0.6234413965087282vw solid black;
+	border-radius: 0 0 100% 100%;
+	position: absolute;
+	top: 13.092269326683292vw;
+	left: 8vw;
+	background: red;
+}
+
+.hand-right{
+	height: 12.468827930174564vw;
+	width: 6.234413965087282vw;
+	background: red;
+	border: 0.6234413965087282vw solid black;
+	border-radius: 45%;
+	position: absolute;
+	top: 14.962593516209477vw;
+	left: 1.2468827930174564vw;
+}
+
+.left-hand{
+	height: 24.93765586034913vw;
+	width: 6.234413965087282vw;
+	background: red;
+	transform: rotate(170deg);
+	border: 0.6234413965087282vw solid black;
+	position: absolute;
+	top: 14.339152119700747vw;
+	right: 14.339152119700747vw;
+	border-radius: 45%;
+	animation-name: waveing;
+	animation-duration: 2s;
+	animation-delay: 6.2s;
+	animation-iteration-count: infinite;
+}
+@keyframes waveing{
+	0% {transform: rotate(0)}
+	25% {transform: rotate(70deg)}
+	50% {transform: rotate(0)}
+	75% {transform: rotate(70deg)}
+	100% {transform: rotate(0)}
+}
+	
+
+.right-leg{
+	height: 8.728179551122194vw;
+	width: 8.104738154613466vw;
+	background: red;
+	border: 0.6234413965087282vw solid black;
+	border-radius: 0 0 20% 20%;
+	position: absolute;
+	bottom: -8.603491271820449vw;
+	left: 3.491271820448878vw;
+	border-top: red;
+}
+
+.left-leg{
+	height: 8.728179551122194vw;
+	width: 8.104738154613466vw;
+	background: red;
+	border: 0.6234413965087282vw solid black;
+	border-radius: 0 0 20% 20%;
+	position: absolute;
+	border-top: red;
+	bottom: -8.603491271820449vw;
+	right: 3.491271820448878vw;
+}
+
+.shadow{
+	height: 7.4812967581047385vw;
+	width: 28.054862842892767vw;
+	background: black;
+	position: absolute;
+	bottom: 23.06733167082294vw;
+	left: 10.598503740648379vw;
+	border-radius: 50%;
+
+}
+
+.anime-shadow{
+	height: 2.493765586034913vw;
+	width: 11.845386533665835vw;
+	background: black;
+	position: absolute;
+	bottom: 3.117206982543641vw;
+	left: 15vw;
+	border-radius: 45%;
+	animation-name: shadow;
+	animation-duration: 2s;
+	animation-delay: 6.2s;
+	animation-iteration-count: infinite;
+}
+@keyframes shadow{
+	0% {left: 15vw}
+	25% {left: 21vw}
+	50% {left: 15vw}
+	75% {left: 21vw}
+	100% {left: 15vw}
+}
+
+.hy{
+	color: white;
+	font-size: 6vw;
+	position: absolute;
+	bottom: 12vw;
+	left: 20.5vw;
+	font-weight: bold;
+	animation-name: hy;
+	animation-duration: 1s;
+	animation-delay: 6.2s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+@keyframes hy{
+	0% {opacity: 0}
+	50% {opacity: 1}
+	100% {opacity: 0}
+}
+
+.hy-shadow{
+	height: 3vw;
+	width: 10vw;
+	background: black;
+	position: absolute;
+	bottom: 10.5vw;
+	left: 20.26vw;
+	border-radius: 50%;
+	animation-name: hy-shadow;
+	animation-duration: 1s;
+	animation-delay: 6.2s;
+	animation-iteration-count: infinite;
+	animation-fill-mode: forwards;
+	opacity: 0;
+}
+@keyframes hy-shadow{
+	0% {opacity: 0}
+	50% {opacity: 1}
+	100% {opacity: 0}
+}
+
+@media screen and (min-width: 576px) {
+	.wrapper{
+		transform: scale(.5);
+		animation-name: spining;
+	}
+	
+	@keyframes spining{
+		0% {transform: scale(0) rotate(0); opacity: 0}
+		50% {transform: scale(.5) rotate(360deg); opacity: 1}
+		100% {transform: scale(.5) rotate(360deg); opacity: 1}
+	}
+} 
+	
