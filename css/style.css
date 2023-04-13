@@ -272,27 +272,27 @@ body{
 	100% {left: 15vw}
 }
 
-.hy{
+.hi{
 	color: white;
 	font-size: 6vw;
 	position: absolute;
 	bottom: 12vw;
 	left: 20.5vw;
 	font-weight: bold;
-	animation-name: hy;
+	animation-name: hi;
 	animation-duration: 1s;
 	animation-delay: 6.2s;
 	animation-iteration-count: infinite;
 	animation-fill-mode: forwards;
 	opacity: 0;
 }
-@keyframes hy{
+@keyframes hi{
 	0% {opacity: 0}
 	50% {opacity: 1}
 	100% {opacity: 0}
 }
 
-.hy-shadow{
+.hi-shadow{
 	height: 3vw;
 	width: 10vw;
 	background: black;
@@ -300,14 +300,14 @@ body{
 	bottom: 10.5vw;
 	left: 20.26vw;
 	border-radius: 50%;
-	animation-name: hy-shadow;
+	animation-name: hi-shadow;
 	animation-duration: 1s;
 	animation-delay: 6.2s;
 	animation-iteration-count: infinite;
 	animation-fill-mode: forwards;
 	opacity: 0;
 }
-@keyframes hy-shadow{
+@keyframes hi-shadow{
 	0% {opacity: 0}
 	50% {opacity: 1}
 	100% {opacity: 0}
